@@ -1,13 +1,13 @@
 {% set name = "PolyRound" %}
-{% set version = "0.2.11" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PolyRound-{{ version }}.tar.gz
-  sha256: 744c08bed5e6457e6bc205e6dbf2168a1ee0a6f2488a3052bad19e7cda883807
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: cf71f0a8f40056d1f091da617c3f637726596067ba5eb3b890ba7ab3ffe37f62
 
 build:
   noarch: python
